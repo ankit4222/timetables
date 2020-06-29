@@ -1,0 +1,48 @@
+<androidx.cardview.widget.CardView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:elevation="2dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="85dp"
+            android:layout_height="105dp"
+            android:id="@+id/ivMain"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMain"
+            android:textStyle="bold"
+
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/ivMain"
+            android:textSize="24sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvdescription"
+            android:layout_below="@+id/tvMain"
+
+            android:layout_toRightOf="@+id/ivMain"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvclick"
+            android:textSize="12dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tvdescription"
+            android:layout_alignBottom="@+id/ivMain"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
